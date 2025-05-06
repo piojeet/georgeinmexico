@@ -34,10 +34,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 33px;
 }
 
 .search-header__logo img {
     width: 131px;
+}
+
+.mob-logo {
+    display: none;
 }
 
 .search-header__form-wrapper {
@@ -58,8 +63,20 @@
     color: var(--dark-color);
 }
 
+/* Hamburger */
+.menu-toggle,
+.hamburger,
+.menu-mob,
+.close-btn-search {
+    display: none;
+}
+
 .search-header__form input::placeholder {
     color: var(--dark-color);
+}
+
+.mob-search-btn {
+    display: none;
 }
 
 .search-header__form {
@@ -78,7 +95,7 @@
 .video-hero__container {
     max-width: 1220px;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 33px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -142,7 +159,7 @@
 .faith-info__container {
     max-width: 1220px;
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 2rem 33px;
     margin: 0 auto;
     text-align: right;
 }
@@ -168,7 +185,7 @@
 .footer__container {
     max-width: 1220px;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 33px;
     margin: 0 auto;
 }
 
@@ -278,4 +295,182 @@
 
 .footer__logo img {
     width: 131px;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .video-hero__container {
+        gap: 20px;
+    }
+
+    .video-hero__heading {
+        font-size: 41px;
+    }
+
+    .video-hero__subheading {
+        font-size: 27px;
+    }
+
+    .video-hero__description {
+        font-size: 21px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .desk-logo {
+        display: none;
+    }
+
+    .mob-logo {
+        display: block;
+        width: 170px;
+    }
+
+    .search-header__form-wrapper {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        box-shadow: 0px 0px 10px rgba(30, 21, 76, 0.386);
+        background: var(--white-color);
+        padding: 10px 10px 10px 20px;
+        border-radius: 5px;
+        width: calc(100% - 33px);
+        z-index: 100;
+    }
+
+    .search-header__form-wrapper.active {
+        display: flex;
+        align-items: center;
+    }
+
+    .search-header__form {
+        width: 100%;
+        background: transparent;
+    }
+
+    .mob-search-btn {
+        display: block;
+    }
+
+    .search-header__container {
+        padding: 20px 33px;
+        box-shadow: 5px 0px 10px rgba(30, 21, 76, 0.386);
+    }
+
+    .menu-mob {
+        display: none;
+        position: fixed;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        /* pointer-events: none; */
+        background: #F6F7F9;
+        padding: 33px;
+        z-index: 100;
+        max-height: calc(100% - 100px);
+        overflow-y: auto;
+    }
+
+    .menu-mob ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        min-height: 626px;
+        height: auto;
+    }
+
+    .menu-mob ul li {
+        width: 100%;
+    }
+
+    .menu-mob ul li a {
+        width: 100%;
+        border-bottom: 1px solid var(--dark-color);
+        display: inline-flex;
+        text-align: center;
+        text-decoration: none;
+        color: var(--gray-color);
+        font-family: var(--yekan);
+        font-weight: 400;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    .menu-toggle:checked+.hamburger+.menu-mob {
+        display: flex;
+    }
+
+    .menu-mob img {
+        width: 1.5rem;
+        display: block;
+        transition: all 0.2s linear;
+    }
+
+    .menu-mob ul li a:hover img {
+        transform: scale(1.2);
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        height: 2px;
+        width: 28px;
+        background: rgb(0, 0, 0);
+        margin: 3px 0;
+    }
+
+    .close-btn-search {
+        display: block;
+    }
+
+    .close-btn-search svg {
+        width: 1rem;
+    }
+
+    .video-hero__container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .video-hero__heading {
+        font-size: 29px;
+        line-height: 38px;
+        margin-top: 10px;
+    }
+
+    .video-hero__subheading {
+        font-size: 19px;
+    }
+
+    .video-hero__description {
+        font-size: 19px;
+    }
+
+    .footer__brand-name {
+        font-size: 14px;
+    }
+
+    .footer__slogan,
+    .footer__copyright,
+    .footer__privacy {
+        font-size: 13px;
+    }
 }
