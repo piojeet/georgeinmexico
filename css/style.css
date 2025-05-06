@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/BYekan.woff') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --yekan: Yekan;
+    --dark-color: #0B3954;
+    --gray-color: #5C676D;
+    --btn-bg: #ffb128;
+    --white-color: #fff;
+    --button-padding: 15px 35px 15px 35px;
+    --button-font-size: 14px;
+    --sora: "Sora", sans-serif;
+    --button-border-radius: 80px 80px 80px 80px;
+    --button-theme-bg-hover: #225471;
+}
+
+.search-header__container {
+    max-width: 1220px;
+    width: 100%;
+    padding: 20px 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-header__logo img {
+    width: 131px;
+}
+
+.search-header__form-wrapper {
+    max-width: 550px;
+    width: 100%;
+}
+
+.search-header__form input {
+    width: 100%;
+    height: 43px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 10px;
+    text-align: end;
+    font-family: var(--yekan);
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.search-header__form input::placeholder {
+    color: var(--dark-color);
+}
+
+.search-header__form {
+    display: flex;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+.search-header__button {
+    padding: 0 8px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.video-hero__container {
+    max-width: 1220px;
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.video-hero__video-wrapper video {
+    width: 100%;
+}
+
+.video-hero__heading {
+    font-size: 48px;
+    font-family: var(--yekan);
+    text-align: end;
+    line-height: 55px;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+}
+
+.video-hero__subheading {
+    font-size: 33px;
+    font-family: var(--yekan);
+    color: var(--dark-color);
+    font-weight: 700;
+    text-align: end;
+    margin-bottom: 15px;
+}
+
+.video-hero__description {
+    font-family: var(--yekan);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--gray-color);
+    text-align: end;
+}
+
+.hero__cta {
+    text-align: end;
+    margin-top: 15px;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.same-cta {
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    padding: var(--button-padding);
+    font-size: var(--button-font-size);
+    background: var(--btn-bg);
+    color: var(--white-color);
+    border-radius: var(--button-border-radius);
+    font-weight: 600;
+    transition: all 0.2s linear;
+}
+
+.same-cta:hover {
+    background: var(--button-theme-bg-hover);
+}
+
+.faith-info__container {
+    max-width: 1220px;
+    width: 100%;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.faith-info__block p {
+    font-size: 21.6px;
+    font-family: var(--yekan);
+    font-weight: 400;
+    color: var(--gray-color);
+    margin-bottom: 15px;
+}
+
+.faith-info__block {
+    margin-bottom: 3rem;
+}
+
+.footer__social-links li a svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+}
+
+.footer__container {
+    max-width: 1220px;
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.footer__logo {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.footer__brand-name {
+    text-align: center;
+    font-family: var(--yekan);
+    font-weight: 700;
+    font-size: 24px;
+    color: #2a2b39;
+}
+
+.footer__brand-name span:last-child {
+    color: #ff9900;
+}
+
+.footer__slogan {
+    text-align: center;
+    font-family: var(--yekan);
+    font-weight: 400;
+    color: var(--gray-color);
+    margin-top: 10px;
+}
+
+.footer__social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.footer__social-links a {
+    text-decoration: none;
+    transition: all 0.2s linear;
+    display: block;
+    fill: rgb(30, 21, 76);
+}
+
+.footer__social-links .youtube:hover {
+    fill: rgb(255, 0, 0);
+    transform: scale(1.3);
+}
+
+.footer__social-links .instagram:hover {
+    fill: rgb(253, 29, 29);
+    transform: scale(1.3);
+}
+
+.footer__social-links .facebook:hover {
+    fill: #0057c1;
+    transform: scale(1.3);
+}
+
+.footer__social-links .twitter:hover {
+    fill: rgb(29, 161, 242);
+    transform: scale(1.3);
+}
+
+.footer__social-links .soundcloud:hover {
+    fill: rgb(255, 136, 0);
+    transform: scale(1.3);
+}
+
+.footer__social-links .paperplane {
+    rotate: 15deg;
+}
+
+.footer__social-links .paperplane:hover {
+    fill: rgb(29, 161, 242);
+    transform: scale(1.3);
+}
+
+.footer__copyright {
+    text-align: center;
+    font-family: var(--yekan);
+    font-weight: 400;
+    color: var(--gray-color);
+}
+
+.footer__privacy {
+    text-align: center;
+    font-family: var(--yekan);
+    font-weight: 400;
+    margin-top: 15px;
+    padding-bottom: 70px;
+}
+
+.footer__privacy a {
+    color: #333399;
+    text-decoration: none;
+}
+
+.footer__privacy a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--btn-bg);
+}
+
+.footer__content {
+    padding-top: 50px;
+}
+
+.footer__logo img {
+    width: 131px;
+}
