@@ -104,6 +104,7 @@
 
 .video-hero__video-wrapper video {
     width: 100%;
+    max-width: 552px;
 }
 
 .video-hero__heading {
