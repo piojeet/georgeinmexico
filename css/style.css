@@ -11,6 +11,7 @@
     src: url('../fonts/BYekan.woff') format('opentype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 :root {
@@ -90,6 +91,7 @@
     border: none;
     outline: none;
     background: transparent;
+    cursor: pointer;
 }
 
 .video-hero__container {
