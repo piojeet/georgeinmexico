@@ -72,6 +72,10 @@
     display: none;
 }
 
+.close-btn-search svg {
+        width: 1rem;
+    }
+
 .search-header__form input::placeholder {
     color: var(--dark-color);
 }
