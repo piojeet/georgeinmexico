@@ -164,6 +164,7 @@ html, body {
     font-weight: 600;
     transition: all 0.2s linear;
     height: 46px;
+    min-width: 163px;
 }
 
 .same-cta:hover {
@@ -176,6 +177,8 @@ html, body {
     padding: 2rem 33px;
     margin: 0 auto;
     text-align: right;
+    min-height: 100vh;
+    height: auto;
 }
 
 .faith-info__block p {
