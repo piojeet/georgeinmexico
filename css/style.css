@@ -496,7 +496,7 @@ body {
 
 @media only screen and (max-width: 412px) {
 
-    .video-hero__video-wrapper video {
+    .video-hero__video-wrapper {
         width: 100%;
         max-width: 300px;
         aspect-ratio: 16 / 9;
