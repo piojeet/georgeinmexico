@@ -159,7 +159,6 @@
     font-weight: 600;
     transition: all 0.2s linear;
     height: 46px;
-    min-width: 163px;
 }
 
 .same-cta:hover {
@@ -306,7 +305,6 @@
 .footer__logo img {
     width: 131px;
     height: 74px;
-    object-fit: contain;
 }
 
 
