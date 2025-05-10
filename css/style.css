@@ -510,4 +510,8 @@ body {
     .search-header__container {
         min-width: 320px;
     }
+
+    .faith-info__block {
+        min-width: 254px;
+    }
 }
