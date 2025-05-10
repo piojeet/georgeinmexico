@@ -516,6 +516,6 @@ body {
 
 @media only screen and (max-width: 320px) {
 .faith-info__block {
-        background-color: red;
+        /* background-color: red; */
     }
 }
