@@ -304,6 +304,8 @@
 
 .footer__logo img {
     width: 131px;
+    height: 74px;
+    object-fit: contain;
 }
 
 
