@@ -502,6 +502,7 @@ body {
         aspect-ratio: 16 / 9;
         margin: 0 auto;
         display: block;
+        height: 42vw;
     }
 
     .video-hero__container,
