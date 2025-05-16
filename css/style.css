@@ -8,11 +8,15 @@ html,
 body {
     width: 100%;
     height: 100%;
+    -wekit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
 }
 
 @font-face {
     font-family: 'Yekan';
-    src: url('../fonts/BYekan.woff2') format('opentype');
+    src: url('../fonts/BYekan.woff2') format('woff2'),
+    url('../fonts/BYekan.woff') format('woff')
+    url('../fonts/BYekan.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -125,6 +129,7 @@ body {
     line-height: 55px;
     color: var(--dark-color);
     margin-bottom: 15px;
+    font-weight: 700;
 }
 
 .video-hero__subheading {
@@ -183,9 +188,13 @@ body {
 .faith-info__block p {
     font-size: 21.6px;
     font-family: var(--yekan);
-    font-weight: 400;
+    font-weight: 300;
     color: var(--gray-color);
     margin-bottom: 15px;
+}
+
+.faith-info__block p strong {
+    font-weight: 600;
 }
 
 .faith-info__block {
