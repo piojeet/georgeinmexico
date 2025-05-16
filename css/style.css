@@ -14,9 +14,9 @@ body {
 
 @font-face {
     font-family: 'Yekan';
-    src: url('../fonts/BYekan.woff2') format('woff2'),
-    url('../fonts/BYekan.woff') format('woff')
-    url('../fonts/BYekan.ttf') format('truetype');
+    src: url('../fonts/BYekan.ttf') format('truetype'),
+        url('../fonts/BYekan.woff') format('woff'),
+        url('../fonts/BYekan.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -525,7 +525,7 @@ body {
 }
 
 @media only screen and (max-width: 320px) {
-.faith-info__block {
+    .faith-info__block {
         /* background-color: red; */
     }
 }
